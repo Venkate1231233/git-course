@@ -1,0 +1,62 @@
+1)local version control system
+2)centralized version control system
+3)distributed version control system
+install
+   |
+   |
+download git
+
+1)git config --global --list   
+which is used to check user details like username and Email
+
+2)for example if we want to setup we use same email , if we are using a public repository like a github and gitlab 
+you'll have the public acc with email id, we have use the same email id
+
+3)to set up user name and email
+git config --global user.name "Venkate1231233"
+git config --global user.email "venkatesh.vempati193@gmail.com"
+
+4)staging area
+commit histroy
+
+working directory--->staging area--->local repository
+
+commands
+git init
+git status  what changes we have made in the previous version
+git init -b main      changing from master to main 
+git log    to check how many git commits we have done
+git log --pretty=oneline   it will show 1 line of each commit(display message and link)
+git add filename    which is used for staging file     
+git add .       which is used to stage all files
+git commit -m "my first project"
+git commit -a -m "my second project" (we can directly use this command instead for staging or add command)
+git diff( this command gives the exact changes made from the commit and previous commit)
+git rm --cached creds.txt (to remove the file from the git and later we can delete from the working directory)
+git clone link 
+
+          To store the file in the remotely in github
+1)mkdir git-course
+2)cd git-course
+3)ls
+     if we want to create and store the files in the git-course repository
+cat README.md   where we can see the content of readme.md file
+
+To connect from the local to remote
+git remote add origin https://github.com/git-course.git(ssh key link)
+                               Basic steps from local to remote
+							   git init
+							   git add filename
+							   git commit -m "first commit"
+							   git push origin main
+		
+git tag(to find the number of tags present in the repository)  tags are lightweighted, annotated tags	
+git tag v1 -m "version number"
+git push tag v1 (we have to push tags externally rather than our code)
+                              branches
+git checkout -b feature1<---->git switch -c feature1 create a new branch of feature (-b)   or git switch feature1 (switching from main to feature1 branch)
+git switch feature1<-------->git switch main (switching from main to branch or viceversa) 
+git branch ---->to find number of branches in the repository	
+git branch --all ----->to find the number of branches in the repository including remote
+git branch -d feature1 ----->to delete the branch 						  
+		  
