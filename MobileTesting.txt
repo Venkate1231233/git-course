@@ -1,0 +1,26 @@
+Types of mobile devices are
+1)smart phones
+2)tablets
+3)basic phones
+4)Wearable devices(smart watches).  etc.,
+note: from windows 8 onwards, we can install the mobile applications in our microsoft windows laptops
+types of mobile operating systems
+1)Android
+2)IOS
+3)kaiOS(linux based OS)
+4)window mobile
+5)BlackBerry
+Android OS based mobile devices 
+1)Android smart phones
+2)Android Tablets
+
+android versions
+android 13(tiramisu)   August 15, 2022
+android 14(upside down cake)  oct 4, 2023(latest version)
+1)what is the best way to test different screen sizes of the devices?
+Using Emulators is the best effective way in case they are many different screen sizes of devices to test.
+ Different types of mobile applications
+ 1)Native
+ 2)Mobile web apps
+ 3)Hybrid 
+ 4)web apps

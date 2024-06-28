@@ -1,0 +1,77 @@
+Environment setup:
+1) downloadinng jar files and attaching them to java project(manually) (.jar) files
+2) create maven project
+-->create a new maven project in eclipse or sts
+-->added web driver dependency in pom.xml(selenium java dependency) --->update maven
+
+In the future, we can just update the new version with old version number....in pom.xml file(in selenium java dependency)
+
+search context is the root interface in web driver
+serachcontext interface extends WebDriver interface
+
+src/test/java     -----> Automation test cases are written here
+src/test/resources ----> Third party files like excel sheets or notepad files or any properties files
+
+Locators
+1) id, name, linktext, partial linktext, tagname, class name
+customized locators
+1) css selectors, xpath
+
+locator by name 
+driver.findElement(By.name("search")).sendKeys("")
+locator by id
+boolean idispresent=driver.findElement(By.Id("logo")).isDisplayed
+locator by linktext
+driver.findElement(By.linkText("Tablets")).click()
+tagname and classname::::identify or locating group of web elements
+findElements return group of web elements (list of web elements)
+List<webElement> headerlinks=driver.findElements(By.className("inline-class-name"))
+
+locator by css selectors
+1)tag id                  tag#id
+2)tag class               tag.classname
+3)tag attribute               tag[attribute="value"]
+4)tag class attribute     tag.classname[attribute="value"]
+1)   tag#id
+driver.findElement(By.cssSelector("input#small-searchterms")).sendKeys("T-shirts");
+2)  tag.classname
+driver.findElement(By.cssSelector("input.search-box-text")).sendKeys("T-Shirts");
+                    or
+driver.findElement(By.cssSelectors(".search-box-text")).sendKeys("T-Shirts");		
+
+3)  tag[attribute="value"]
+driver.findElement(By.cssSelectors("input[placeholder='search store']")).sendKeys("T-Shirts");
+                        or
+						
+driver.findElement(By.cssSelectors("[placeholder='search store']")).sendKeys("T-Shirts");		
+4)  tag.classname[attribute="value"]
+
+driver.findElement(By.cssSelectors("input.search-box-text[placeholder='search store']")).sendKeys("T-Shirts");		
+                        or
+driver.findElement(By.cssSelectors(".search-box-text[placeholder='search store']")).sendKeys("T-Shirts");			
+
+selector hub is a tool which is used to locate the id, name, cssselctor....so, we can add this tool to our chrome browser ... we simply add extension to our browser
+
+xpath---xpath contain path of the  element  situated on the webpage.
+types of xpath are absolute xpath and relative xpath 
+difference between absolute and relative xpath
+1)absolute xpath begins with / forward slash
+   relative xpath begins with // forward slash
+2)absolute xpath don't use attributes
+  relative xpath use attributes   
+relative xpath-----we can create 2 ways
+1)automatically------devtools, selectorhub
+2)manually(own Xpath)...we have to know the syntax
+syntax:
+//tagname[@attribute='value']
+         or
+//*[@attribute='value']		  
+xpath with single attribute
+//input[@name='search']
+xpath with mutiple attributes
+//input[@name='search'][@placeholder='Search']
+
+xpath with 'and'  'or' operators
+
+//input[@name='search' and @placeholder='search']  
+//input[@name='search' or @placeholder='search'] 

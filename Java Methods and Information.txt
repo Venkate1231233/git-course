@@ -1,0 +1,101 @@
+1) str=str.toLowerCase(); 
+This method will convert uppercase characters into lowercase characters.
+2)Arrays.sort(numbers)
+this method will sort the all numbers in ascending order
+3)str.CharAt(i)
+4)split the string by white to get an array of words
+    		
+    		String[] words=str.split("\\s+");
+//    		return the length of the array, which is the number of words
+'\\s+' is a regular expression that matches one or more whitespace characters (spaces, tabs, newlines, etc.).
+5)//replaceAll("\\s"","")....removes all the spaces in the string
+		//trim()....removes leading and trailing spaces in the string but not in the middle of string
+6)		initialize the 2D matrix
+		int[][] matrix=new int[n][n];	
+7)make number positive if its negative
+		number=Math.abs(number);		
+8)toCharArray() ....converting string into character array		
+9)// Compare strings ignoring case
+        return str1.equalsIgnoreCase(str2);
+10)To concatenate two strings we can use '+' operator or concat()
+11)// Check if str1 ends with str2
+        return str1.endsWith(str2);
+12)Check if the two strings contain the same data
+        return str1.equals(str2);		
+13)Calendar calendar=Calendar.getInstance(); 
+we create a calendar instance		
+14) // Get and display the maximum value of the year
+        int maxYear = calendar.getActualMaximum(Calendar.YEAR);
+15)// Get and display month (Note: Month is 0-based, so add 1 for human-readable format)
+        int month = calendar.get(Calendar.MONTH) + 1;
+        System.out.println("Month: " + month);
+16)  // Get the current date and time
+        LocalDateTime currentDateTime = LocalDateTime.now();
+17)Create a new ArrayList to hold strings
+        ArrayList<String> colors = new ArrayList<>();
+		An Iterator is an object that enables you to traverse through a collection, such as an ArrayList
+		Key Methods of Iterator
+hasNext(): Returns true if the iteration has more elements.
+next(): Returns the next element in the iteration.
+remove(): Removes the last element returned by the iterator (optional operation).
+18)// Update the element at the specified index
+  colors.set(index, newElement);
+19)  // Retrieve the element at the specified index  
+  String element = colors.get(index);
+20)addAll()--->to add array lists
+21)Iterator()--->which is used to iterate the elements
+22)add()--->to add the elements at specified location
+23)contains()--->to search an element in a arraylist
+24)remove()--->to remove an element from  a arraylist
+25)set()--->to update an specific element from a arraylist
+26)reverse()--->to remove the element from a array list
+27)equals()---->to compare two array lists 
+28)get()--->to retrieve an element(at an specific element)
+29)subList()---> to extract a portion of a array list   
+No, we cannot use a regular Iterator instead of a ListIterator for iterating 
+a LinkedList in reverse order because the Iterator interface only supports 
+forward iteration. The ListIterator interface extends Iterator and provides 
+additional methods for bidirectional iteration (hasPrevious() and previous()),
+ which are necessary for reverse iteration.
+  // Insert the specified element at the first position
+        list.addFirst(firstElement);
+        
+        // Insert the specified element at the last position
+        list.addLast(lastElement);
+        list.add(position1, element1);
+        list.add(position2, element2);
+		 // Get the first occurrence of the specified element
+        int firstOccurrence = colors.indexOf(element);
+        
+        // Get the last occurrence of the specified element
+        int lastOccurrence = colors.lastIndexOf(element);
+
+ boolean isempty=hashset.isEmpty();
+		System.out.println(isempty);   */
+		// Create a new HashSet to convert
+      //  HashSet<String> newSet = new HashSet<>(hashset);
+		 
+        // Convert HashSet to an array
+        //String[] array = new String[set.size()];
+        //set.toArray(array);
+		
+		 
+        // Convert HashSet to TreeSet
+        //TreeSet<String> treeSet = new TreeSet<>(hashSet);
+		
+		// Compare the HashSets
+        // hashset.equals(hashset1);
+
+
+// Add all elements from treeSet to treeSet1  (or) clone the TreeSet
+        //treeset.addAll(treeset1);
+		
+		// get reverse order view of the TreeSet
+		// NavigableSet<String> reverseTreeSet=treeset.descendingSet();
+
+		//		 Get the first element
+//        String firstElement = treeset.first();
+		  
+//        Get the last element
+//        String lastElement = treeset.last();      		
+		
