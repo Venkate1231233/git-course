@@ -46,7 +46,7 @@ To connect from the local to remote
 git remote add origin https://github.com/git-course.git(ssh key link)
                                Basic steps from local to remote
 							   git init
-							   git add filename
+							   git add .
 							   git commit -m "first commit"
 							   git push origin main
 		
@@ -55,6 +55,7 @@ git tag v1 -m "version number"
 git push tag v1 (we have to push tags externally rather than our code)
                               branches
 git checkout -b feature1<---->git switch -c feature1 create a new branch of feature (-b)   or git switch feature1 (switching from main to feature1 branch)
+git checkout master<----> git checkout branch1
 git switch feature1<-------->git switch main (switching from main to branch or viceversa) 
 git branch ---->to find number of branches in the repository	
 git branch --all ----->to find the number of branches in the repository including remote
